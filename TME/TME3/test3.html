@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC 
+	"-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="fr">
+  <head>
+    <title>onsubmit</title>
+  </head>
+  <body>
+    <h1>onsubmit</h1>
+    <form action="javascript:alert(document.forms[0].elements['saisie'].value)"
+	  method='get'
+	  onsubmit="return this.elements['saisie'].value.match(/7/)!=null;">
+      <input name='saisie' id='saisie' value='7'/>
+<!-- essayer a la place: <input name='saisie1' id='saisie' value='78'/> -->
+      <input type='submit' />
+    </form>
+  </body>
+</html>
